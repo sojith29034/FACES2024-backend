@@ -19,7 +19,7 @@ class SeatsFilterList(admin.SimpleListFilter):
     def lookups(self, request, model_admin):
         return (
             ('FULL', 'Seats Full'),
-            ('VACENT', 'Seats Vacant'),
+            ('VACANT', 'Seats Vacant'),
         )
 
     def queryset(self, request, queryset):

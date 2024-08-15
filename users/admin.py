@@ -63,7 +63,7 @@ class UserAdmin(admin.ModelAdmin):
                 user.name,
                 user.roll_no,
                 user.userpassword,
-                "faces.fcrit.ac.in",  # Change this URL to the login page URL
+                "https://faces2024.netlify.app/",  # Change this URL to the login page URL
             )
             from_email = "faces@fcrit.ac.in"  # Change this to your email address
             recipient_list = [user.email]

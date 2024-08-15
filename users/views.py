@@ -106,7 +106,7 @@ class LoginView(ObtainAuthToken):
 
   def post(self, request, *args, **kwargs):
     serializer = self.serializer_class(data=request.data, context={'request': request})
-    print(serializer);
+    print(serializer)
     if serializer.is_valid():
       user = serializer.validated_data['user']
       user_serializer = UserSerializer(user)

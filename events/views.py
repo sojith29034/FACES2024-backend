@@ -87,6 +87,7 @@ class EventRegiterView(APIView):
       return [None, False]
 
     user: User = request.user
+    print(request.data)
     event_code = request.data['event_code']
     event = None
     print(event_code)
@@ -146,7 +147,7 @@ class EventRegiterView(APIView):
     else:
       # Event is Team Event
       
-      team_name = request.data['team_name'][0]
+      team_name = request.data['team_name']
       members_str = request.data["members"]
       print(type(user.roll_no))
       print(type(members_str))

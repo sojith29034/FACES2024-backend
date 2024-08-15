@@ -29,7 +29,7 @@ OTP_VERIFY_SECRET = "BRUH"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False if os.getenv('DJANGO_DEBUG') == 'False' else True 
 
-ALLOWED_HOSTS = ['127.0.0.1','etamax.fcrit.ac.in','faces.fcrit.ac.in','122.200.18.86','etamax22.herokuapp.com', os.getenv("PUBLIC_IP", "localhost")]
+ALLOWED_HOSTS = ['127.0.0.1','etamax.fcrit.ac.in','faces.fcrit.ac.in','122.200.18.86','etamax22.herokuapp.com','*' ,os.getenv("PUBLIC_IP", "localhost")]
 
 # Application definition
 
@@ -224,10 +224,10 @@ EMAIL_PORT = 587  # Port for TLS (587 is commonly used)
 EMAIL_USE_TLS = True  # Use TLS encryption
 EMAIL_USE_SSL = False  # Don't use SSL
 EMAIL_HOST_USER = 'faces@fcrit.ac.in'  # Your Outlook email address
-EMAIL_HOST_PASSWORD = 'faces@2023'  # Your Outlook email password (consider using app-specific password)
+EMAIL_HOST_PASSWORD = 'faces#2024'  # Your Outlook email password (consider using app-specific password)
 
 # Sender's email address (usually the same as EMAIL_HOST_USER)
-DEFAULT_FROM_EMAIL = '1021209@comp.fcrit.ac.in'  # Your Outlook email address
+DEFAULT_FROM_EMAIL = 'faces@fcrit.ac.in'  # Your Outlook email address
 
 # MATOR SETTINGS
 
